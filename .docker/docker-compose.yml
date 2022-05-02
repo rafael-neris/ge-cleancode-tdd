@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  tdd:
+    container_name: tdd
+    image: rafaelneris/tdd
+    volumes:
+      - ../:/var/www
+volumes:
+  tdd:

@@ -1,0 +1,29 @@
+{
+  "name": "vendor_name/ge-cleancode-tdd",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "rafael",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jokenpo\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "Test\\Unit\\": "tests/Unit/"
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit",
+    "test-html": "./vendor/bin/phpunit --coverage-html tests/.coverage"
+  }
+}

@@ -1,0 +1,38 @@
+@startuml
+class Jokenpo {
+    Player player1
+    Player player2
+    + {method} start():
+}
+
+class Player {
+    - String name
+    - Play play
+    + {method} getPlay(): Play
+}
+
+abstract Play {
+    - {abstract} String name
+    - {abstract} gainFrom: array<Play>
+    + {abstract} {method} gainFrom(): array
+}
+
+class Pedra {
+    - {abstract} gainFrom: array<Play>
+}
+
+class Papel {
+    - {abstract} gainFrom: array<Play>
+}
+
+class Tesoura {
+    - {abstract} gainFrom: array<Play>
+}
+
+Play <|-- Pedra
+Play <|-- Papel
+Play <|-- Tesoura
+
+Player o-- Play
+Jokenpo *-- Player
+@enduml
