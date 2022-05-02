@@ -2,7 +2,9 @@
 class Jokenpo {
     Player player1
     Player player2
-    + {method} start():
+    + {method} start(): String
+    - checkTie(): bool
+    - checkWinner(): Player
 }
 
 class Player {
