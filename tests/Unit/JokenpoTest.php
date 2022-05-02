@@ -61,7 +61,7 @@ class JokenpoTest extends TestCase
         self::assertEquals("Hemilio ganhou a partida.", $resultado);
     }
 
-    /**        $jokenPo = new Jokenpo($, $player2);
+    /**
      * @dataProvider winsProvider
      */
     public function testLose(Play $jogadaPerdedora, Play $jogadaVencedora)
